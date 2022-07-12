@@ -4,7 +4,7 @@ var initialState = [];
 
 const colClass = ["firstName", "lastName", "email", "phone", "role", "address"];
 
-function fetchData(e) {
+function loadData(e) {
   let loadButton = document.getElementById(e.target.id);
   loadButton.remove();
 
@@ -132,4 +132,4 @@ function refreshData(e) {
   location.reload();
 }
 
-document.querySelector("#load").addEventListener("click", fetchData);
+document.querySelector("#load").addEventListener("click", loadData);
