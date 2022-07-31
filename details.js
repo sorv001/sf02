@@ -24,6 +24,7 @@ function edit_data(e) {
   let edit_btn = document.getElementById(eid);
   let id = eid.slice(4, eid.length);
   let row = document.getElementById(`row${id}`);
+  row.style.backgroundColor = "yellow";
   row.contentEditable = true;
 
   let save_button = document.createElement("button");
@@ -57,6 +58,7 @@ function cancel(e) {
   let save_btn = document.getElementById(`save${eid}`);
   let cancel_btn = document.getElementById(`cancel${eid}`);
   let row = document.getElementById(`row${eid}`);
+  row.style.backgroundColor = "cyan";
 
   row.contentEditable = false;
 
