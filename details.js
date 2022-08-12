@@ -67,7 +67,6 @@ function cancel(e) {
 }
 
 function load_data() {
-  let vec = [];
   const table = document.createElement("table");
   const tbody = document.createElement("tbody");
 
@@ -90,7 +89,6 @@ function load_data() {
       let cellText = document.createTextNode(data[i][j]);
       cell.appendChild(cellText);
       row.appendChild(cell);
-      vec.push(data[i][j]);
     }
     initialState.push(vec);
 
